@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<ImageView
+    android:id="@+id/arrow"
+    android:layout_width="15dp"
+    android:layout_height="15dp"
+    android:layout_alignParentLeft="true"
+    android:src="@drawable/arrow"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="20dp"/>
+
+  <TextView
+      android:id="@+id/heading"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Personal Data Setting"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="15dp"
+      android:textSize="19sp"
+      android:textStyle="bold"
+      />
+
+    <ImageView
+        android:id="@+id/dots"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/more"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <ImageView
+        android:id="@+id/man"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:src="@drawable/model"
+        android:layout_below="@id/heading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name on card"
+        android:layout_toLeftOf="@id/man"
+        android:layout_below="@id/man"
+        android:layout_marginTop="33dp"
+        android:layout_marginRight="40dp"
+        android:textSize="15sp"/>
+
+  <EditText
+      android:id="@+id/innertex1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/name"
+      android:layout_marginLeft="22dp"
+      android:layout_marginTop="10dp"
+      android:background="@drawable/design"
+      android:ems="17"
+      android:hint="Toreto Anakke Pak Kus"
+      android:padding="13dp" />
+
+  <TextView
+    android:id="@+id/numOnCard"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Number Card"
+      android:layout_below="@id/innertex1"
+      android:layout_marginTop="20dp"
+      android:layout_marginLeft="21dp"
+      android:textSize="15sp"/>
+
+  <EditText
+      android:id="@+id/innertex2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:hint="****2345"
+      android:inputType="number"
+      android:layout_below="@id/numOnCard"
+      android:layout_marginLeft="22dp"
+      android:layout_marginTop="10dp"
+      android:ems="17"
+      android:background="@drawable/design"
+      android:padding="13dp"/>
+
+  <TextView
+      android:id="@+id/Phone"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Phone"
+      android:layout_below="@id/innertex2"
+      android:layout_marginTop="20dp"
+      android:layout_marginLeft="21dp"
+      android:textSize="15sp" />
+
+  <EditText
+      android:id="@+id/innertex3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:hint="+62 815 2222 3435"
+      android:layout_below="@+id/Phone"
+      android:layout_marginLeft="22dp"
+      android:layout_marginTop="10dp"
+      android:ems="17"
+      android:background="@drawable/design"
+      android:padding="13dp"
+      android:inputType="number"/>
+
+  <TextView
+      android:id="@+id/dateOfBirth"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Date of birth"
+      android:textSize="15sp"
+      android:layout_below="@+id/innertex3"
+      android:layout_marginTop="20dp"
+      android:layout_marginLeft="21dp"/>
+
+  <EditText
+      android:id="@+id/innertex4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:hint="Choose"
+      android:layout_below="@id/dateOfBirth"
+      android:layout_marginLeft="22dp"
+      android:layout_marginTop="10dp"
+      android:ems="17"
+      android:background="@drawable/design"
+      android:padding="13dp"/>
+
+  <TextView
+      android:id="@+id/gender"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Gender"
+      android:textSize="15sp"
+      android:layout_below="@+id/innertex4"
+      android:layout_marginTop="20dp"
+      android:layout_marginLeft="21dp"/>
+
+  <RadioButton
+      android:id="@+id/radioButton"
+      android:layout_width="160dp"
+      android:layout_height="wrap_content"
+      android:text="Male"
+      android:layout_below="@+id/gender"
+      android:layout_marginTop="10dp"
+      android:layout_marginLeft="22dp"
+      android:background="@drawable/design"/>
+
+      <RadioButton
+          android:id="@+id/radiobtn1"
+          android:layout_width="160dp"
+          android:layout_height="wrap_content"
+         android:layout_toRightOf="@+id/radioButton"
+          android:layout_below="@+id/gender"
+          android:text="Female"
+          android:background="@drawable/design"
+          android:layout_marginTop="10dp"
+          android:layout_marginLeft="32dp"/>
+
+</RelativeLayout>
